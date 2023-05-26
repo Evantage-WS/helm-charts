@@ -1,0 +1,9 @@
+apiVersion: v2
+type: application
+version: 0.1.0
+appVersion: 1.0.1
+description: Hello Evantage Rancher demo application, web UI showing scale of containers
+name: hello-rancher-demo
+maintainers:
+  - name: evantage
+    email: helm@evantage.nl

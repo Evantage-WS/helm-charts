@@ -1,0 +1,91 @@
+# Helm Charts
+
+[![CI](https://github.com/evantage-ws/helm-charts/actions/workflows/ci.yaml/badge.svg)](https://github.com/evantage-ws/helm-charts/actions/workflows/ci.yaml)
+[![CD](https://github.com/evantage-ws/helm-charts/actions/workflows/cd.yaml/badge.svg)](https://github.com/evantage-ws/helm-charts/actions/workflows/cd.yaml)
+[![HitCount](https://hits.dwyl.com/evantage-ws/helm-charts.svg?style=flat-square)](http://hits.dwyl.com/evantage-ws/helm-charts)
+
+Helm charts to ease the deployment of containers on Kubernetes clusters and get information on widely used components.
+
+## Quickstart
+
+* Visit [https://evantage-ws.github.io/helm-charts/](https://evantage-ws.github.io/helm-charts/)
+
+## Catalog
+
+* Applications
+  * [Hello Rancher](charts/hello-rancher/README.md)
+
+Limitation: [Helm Chart Releaser](https://github.com/helm/chart-releaser) doesn't support multiple chart directories ou multiple levels so all charts must be in `charts` repository
+
+## Usage
+
+### From Helm CLI
+
+```bash
+# checks helm is installed
+helm version
+
+# if not already done, adds evantage-ws repository in helm
+helm repo add evantage-ws https://evantage-ws.github.io/helm-charts
+
+# refreshes helm repository informations
+helm repo update
+
+# searches for a specific package from the command line
+helm search repo -l <package_name>
+
+# installs a package
+helm install <package_name>
+```
+
+### From Rancher Fleet
+
+* Create a git repository to store Kubernetes definition files (GitOps approach)
+
+```yaml
+# hello-rancher-demo/fleet.yaml
+defaultNamespace: sample-apps
+helm:
+  repo: https://evantage-ws.github.io/helm-charts
+  chart: hello-rancher-demo
+  version: 0.1.1
+  releaseName: hello-rancher-demo
+```
+
+* Create a GitRepo to reference the git repository with the path to the folder
+
+### From Rancher
+
+* In your cluster
+  * Go to "Apps" > "Repositories", click on "Create" and enter "https://evantage-ws.github.io/helm-charts" as "Index URL", then click on "Create"
+  * Go to "Apps" > "Charts", look at the available applications (charts) and install the one(s) you want
+
+## Local setup
+
+### How to validate a code change
+
+* Lint charts with [helm/chart-testing](https://github.com/helm/chart-testing)
+
+```bash
+# runs Docker image (with workaround described at https://github.com/helm/chart-testing/issues/464)
+sudo docker run --rm -it --workdir=/data --volume $(pwd):/data quay.io/helmpack/chart-testing:v3.7.1 /bin/sh -c "git config --global --add safe.directory /data ; ./scripts/add_helm_repo.sh ; ct lint --target-branch main"
+```
+
+## References
+
+* Cloud Native components
+  * [Cloud Native Interactive Landscape](https://landscape.cncf.io/)
+* Documentation
+  * [Rancher How-to Guides > Helm Charts > Creating Apps](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/helm-charts-in-rancher/create-apps)
+* Examples
+  * [argoproj/argocd-example-apps](https://github.com/argoproj/argocd-example-apps)
+  * [rancher/rodeo](https://github.com/rancher/rodeo)
+* Official repositories
+  * [argoproj/argo-helm](https://github.com/argoproj/argo-helm)
+  * [aws/eks-charts](https://github.com/aws/eks-charts)
+  * [bitnami/charts](https://github.com/bitnami/charts)
+  * [elastic/helm-charts](https://github.com/elastic/helm-charts)
+  * [grafana/helm-charts](https://github.com/grafana/helm-charts)
+  * [prometheus-community/helm-charts](https://github.com/prometheus-community/helm-charts)
+  * [rancher/charts](https://github.com/rancher/charts)
+  * [rancher/helm3-charts](https://github.com/rancher/helm3-charts)
