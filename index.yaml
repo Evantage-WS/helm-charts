@@ -1,3 +1,18 @@
 apiVersion: v1
 entries:
   hello-rancher-demo:
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2023-05-26T14:07:13.360483471Z"
+    description: Hello Evantage Rancher demo application, web UI showing scale of
+      containers
+    digest: 8fd993f275e87b7dd4684a3d10a9cd41848ea1011a2a433c8fd2059e72dde49f
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: hello-rancher-demo
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-demo-0.1.0/hello-rancher-demo-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-05-26T14:07:13.360495371Z"
