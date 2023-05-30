@@ -80,3 +80,5 @@ sudo docker run --rm -it --workdir=/data --volume $(pwd):/data quay.io/helmpack/
 * Official repositories
   * [rancher/charts](https://github.com/rancher/charts)
   * [rancher/helm3-charts](https://github.com/rancher/helm3-charts)
+
+### Thanks to Devpro for the idea and help, some nice charts from Devpro are [here](https://github.com/devpro/helm-charts)
