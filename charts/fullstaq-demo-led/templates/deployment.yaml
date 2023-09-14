@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "led.fullname" . }}-led
+  labels:
+    app: led
+  {{- include "led.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.led.replicas }}
+  selector:
+    matchLabels:
+      app: led
+    {{- include "led.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        app: led
+      {{- include "led.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - env:
+        - name: MQTT_PATH
+          value: {{ quote .Values.led.led.env.mqttPath }}
+        - name: KUBERNETES_CLUSTER_DOMAIN
+          value: {{ quote .Values.kubernetesClusterDomain }}
+        image: {{ .Values.led.led.image.repository }}:{{ .Values.led.led.image.tag | default
+          .Chart.AppVersion }}
+        name: led
+        resources: {{- toYaml .Values.led.led.resources | nindent 10 }}
+        volumeMounts:
+        - mountPath: /etc/localtime
+          name: localtime
+      restartPolicy: Always
+      volumes:
+      - hostPath:
+          path: /usr/share/zoneinfo/Europe/Amsterdam
+        name: localtime
