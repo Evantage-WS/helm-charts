@@ -6,11 +6,4 @@ led:
     image:
       repository: wvanderstek/led
       tag: latest
-    resources:
-      limits:
-        cpu: 100m
-        memory: 100Mi
-      requests:
-        cpu: 100m
-        memory: 100Mi
   replicas: 1
