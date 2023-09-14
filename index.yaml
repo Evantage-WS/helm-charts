@@ -17,6 +17,16 @@ entries:
   led:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2023-09-14T14:49:50.577799583Z"
+    description: Install the led container in Kubernetes
+    digest: d9a84bb19db4b313210af704b28600c6191f5a408095fffdbe019b77d6dce393
+    name: led
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/led-1.0.1/led-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2023-09-14T11:49:37.359180014Z"
     description: Install the led container in Kubernetes
     digest: e000dd3d15cf4f5e614db8ccb73a1207f3806b72ba8168f5dc37d28360c8ccc8
@@ -25,4 +35,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/led-1.0.0/led-1.0.0.tgz
     version: 1.0.0
-generated: "2023-09-14T11:49:37.359184714Z"
+generated: "2023-09-14T14:49:50.578138092Z"
