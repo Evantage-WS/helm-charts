@@ -14,4 +14,15 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-0.1.1/hello-rancher-0.1.1.tgz
     version: 0.1.1
-generated: "2023-05-30T09:57:10.823349592Z"
+  led:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-09-14T11:49:37.359180014Z"
+    description: Install the led container in Kubernetes
+    digest: e000dd3d15cf4f5e614db8ccb73a1207f3806b72ba8168f5dc37d28360c8ccc8
+    name: led
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/led-1.0.0/led-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-09-14T11:49:37.359184714Z"
