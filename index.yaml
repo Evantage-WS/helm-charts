@@ -11,26 +11,6 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/button-edge-demo-0.1.2/button-edge-demo-0.1.2.tgz
     version: 0.1.2
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2023-09-15T14:28:48.567834805Z"
-    description: Install the button application for the Fullstaq Edgecase 2023
-    digest: d5d2cfb345b974f1e21ee5fe13973c2fb5dbe6472cb314c208df040fec3b65f3
-    name: button-edge-demo
-    type: application
-    urls:
-    - https://github.com/Evantage-WS/helm-charts/releases/download/button-edge-demo-0.1.1/button-edge-demo-0.1.1.tgz
-    version: 0.1.1
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2023-09-15T14:14:10.18917732Z"
-    description: A Helm chart for Kubernetes
-    digest: eff53821b00720559705ac35b17f6405ae986023363403d3fc102a8f3b925f12
-    name: button-edge-demo
-    type: application
-    urls:
-    - https://github.com/Evantage-WS/helm-charts/releases/download/button-edge-demo-0.1.0/button-edge-demo-0.1.0.tgz
-    version: 0.1.0
   hello-rancher:
   - apiVersion: v2
     appVersion: 1.0.1
@@ -45,27 +25,6 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-0.1.1/hello-rancher-0.1.1.tgz
     version: 0.1.1
-  led:
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2023-09-14T14:49:50.577799583Z"
-    description: Install the led container in Kubernetes
-    digest: d9a84bb19db4b313210af704b28600c6191f5a408095fffdbe019b77d6dce393
-    name: led
-    type: application
-    urls:
-    - https://github.com/Evantage-WS/helm-charts/releases/download/led-1.0.1/led-1.0.1.tgz
-    version: 1.0.1
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2023-09-14T11:49:37.359180014Z"
-    description: Install the led container in Kubernetes
-    digest: e000dd3d15cf4f5e614db8ccb73a1207f3806b72ba8168f5dc37d28360c8ccc8
-    name: led
-    type: application
-    urls:
-    - https://github.com/Evantage-WS/helm-charts/releases/download/led-1.0.0/led-1.0.0.tgz
-    version: 1.0.0
   led-edge-demo:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -77,54 +36,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/led-edge-demo-0.1.6/led-edge-demo-0.1.6.tgz
     version: 0.1.6
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2023-09-15T13:44:50.967998178Z"
-    description: A Helm chart for Kubernetes
-    digest: 48b23ceebeb9ff1645f8e3a756a70d06d324ddcdfeec65171472b2062455ca2b
-    name: led-edge-demo
-    type: application
-    urls:
-    - https://github.com/Evantage-WS/helm-charts/releases/download/led-edge-demo-0.1.5/led-edge-demo-0.1.5.tgz
-    version: 0.1.5
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2023-09-15T13:08:35.960782124Z"
-    description: A Helm chart for Kubernetes
-    digest: 55370b33f21876eb56a4172cf0a71379b7b91125755c72320781441d48c1ff39
-    name: led-edge-demo
-    type: application
-    urls:
-    - https://github.com/Evantage-WS/helm-charts/releases/download/led-edge-demo-0.1.4/led-edge-demo-0.1.4.tgz
-    version: 0.1.4
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2023-09-15T12:41:46.017831837Z"
-    description: A Helm chart for Kubernetes
-    digest: 3fcb95d032cae54bea1517355e7e5dbd0448c3ee4734e6d0303950701d160da0
-    name: led-edge-demo
-    type: application
-    urls:
-    - https://github.com/Evantage-WS/helm-charts/releases/download/led-edge-demo-0.1.3/led-edge-demo-0.1.3.tgz
-    version: 0.1.3
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2023-09-15T07:38:15.718635692Z"
-    description: A Helm chart for Kubernetes
-    digest: aa97cc6c5c9042f88e25091bbff9185872a72c95ddb1a1d0872f757986766b33
-    name: led-edge-demo
-    type: application
-    urls:
-    - https://github.com/Evantage-WS/helm-charts/releases/download/led-edge-demo-0.1.1/led-edge-demo-0.1.1.tgz
-    version: 0.1.1
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2023-09-14T15:00:27.564065254Z"
-    description: A Helm chart for Kubernetes
-    digest: cc99da1f6d8bc01f29423d5d4b8ae4d528c4d65944f7c31f6b7580cb622da7b5
-    name: led-edge-demo
-    type: application
-    urls:
-    - https://github.com/Evantage-WS/helm-charts/releases/download/led-edge-demo-0.1.0/led-edge-demo-0.1.0.tgz
-    version: 0.1.0
-generated: "2023-09-15T15:21:41.507753791Z"
+  generated: "2023-09-15T15:21:41.507753791Z"
