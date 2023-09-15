@@ -38,6 +38,16 @@ entries:
   led-edge-demo:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2023-09-15T12:41:46.017831837Z"
+    description: A Helm chart for Kubernetes
+    digest: 3fcb95d032cae54bea1517355e7e5dbd0448c3ee4734e6d0303950701d160da0
+    name: led-edge-demo
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/led-edge-demo-0.1.3/led-edge-demo-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2023-09-15T07:38:15.718635692Z"
     description: A Helm chart for Kubernetes
     digest: aa97cc6c5c9042f88e25091bbff9185872a72c95ddb1a1d0872f757986766b33
@@ -56,4 +66,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/led-edge-demo-0.1.0/led-edge-demo-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-15T07:38:15.718647892Z"
+generated: "2023-09-15T12:41:46.017853739Z"
