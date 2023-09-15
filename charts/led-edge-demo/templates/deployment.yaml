@@ -26,6 +26,9 @@ spec:
         image: {{ .Values.led.led.image.repository }}:{{ .Values.led.led.image.tag | default
           .Chart.AppVersion }}
         name: led
+        securityContext:
+          privileged: true
+          runAsUser: 0
         resources: {}
         volumeMounts:
         - mountPath: /etc/localtime

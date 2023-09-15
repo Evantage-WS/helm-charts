@@ -2,7 +2,7 @@ kubernetesClusterDomain: cluster.local
 led:
   led:
     env:
-      mqttPath: channelname
+      mqttPath:
     image:
       repository: jurrien/led
       tag: latest
