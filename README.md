@@ -15,7 +15,7 @@ Helm charts to ease the deployment of containers on Kubernetes clusters and get 
 * Applications
   * [Hello Rancher](charts/hello-rancher/README.md)
 
-Limitation: [Helm Chart Releaser](https://github.com/helm/chart-releaser) doesn't support multiple chart directories ou multiple levels so all charts must be in `charts` repository
+Limitation: [Helm Chart Releaser](https://github.com/helm/chart-releaser) doesn't support multiple chart directories or multiple levels so all charts must be in `charts` repository
 
 ## Usage
 

@@ -1,0 +1,22 @@
+# For Rancher
+rancher_min_version: 2.7.5
+rancher_max_version: 2.7.5
+questions:
+- variable: mqttPath
+  required: true
+  default: ""
+  description: "Which channel to use in the messagequeue for communication between the LED and the BUTTON container"
+  type: enum
+  label: Which messagequeuechannel to use
+  group: "Storage Options"
+  options:
+    - "01"
+    - "02"
+    - "03"
+    - "04"
+    - "05"
+    - "06"
+    - "07"
+    - "08"
+    - "09"
+    - "10"
