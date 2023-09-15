@@ -26,6 +26,9 @@ spec:
         image: {{ .Values.button.button.image.repository }}:{{ .Values.button.button.image.tag
           | default .Chart.AppVersion }}
         name: button
+        securityContext:
+          privileged: true
+          runAsUser: 0
         resources: {}
         volumeMounts:
         - mountPath: /etc/localtime
