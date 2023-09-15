@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  button-edge-demo:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-09-15T14:14:10.18917732Z"
+    description: A Helm chart for Kubernetes
+    digest: eff53821b00720559705ac35b17f6405ae986023363403d3fc102a8f3b925f12
+    name: button-edge-demo
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/button-edge-demo-0.1.0/button-edge-demo-0.1.0.tgz
+    version: 0.1.0
   hello-rancher:
   - apiVersion: v2
     appVersion: 1.0.1
@@ -86,4 +97,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/led-edge-demo-0.1.0/led-edge-demo-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-15T13:44:50.96818478Z"
+generated: "2023-09-15T14:14:10.189202622Z"
