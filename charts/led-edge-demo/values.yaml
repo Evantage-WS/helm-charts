@@ -4,6 +4,6 @@ led:
     env:
       mqttPath: channelname
     image:
-      repository: wvanderstek/led
+      repository: jurrien/led
       tag: latest
   replicas: 1
