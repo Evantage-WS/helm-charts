@@ -19,3 +19,7 @@ version: 0.1.10
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 appVersion: "0.1.0"
+annotations:
+  catalog.cattle.io/namespace: testwilco
+  catalog.cattle.io/display-name: Led Demo Edgecase
+  catalog.cattle.io/release-name: led-demo-edgecase
