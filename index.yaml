@@ -1,3 +1,18 @@
-  apiVersion: v1
-  entries:
-    led-edge-demo:
+apiVersion: v1
+entries:
+  led-edge-demo:
+  - annotations:
+      catalog.cattle.io/display-name: Led Demo Edgecase
+      catalog.cattle.io/namespace: testwilco
+      catalog.cattle.io/release-name: led-demo-edgecase
+    apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-09-18T08:14:52.709290272Z"
+    description: Install the led application for the Fullstaq Edgecase 2023
+    digest: 6a7449c40d9a9017e91d402147a0adf8f47cb662b7cd55cf605ec9b569075e67
+    name: led-edge-demo
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/led-edge-demo-0.1.13/led-edge-demo-0.1.13.tgz
+    version: 0.1.13
+generated: "2023-09-18T08:14:52.709294172Z"
