@@ -3,6 +3,19 @@ entries:
   button-edgecase-demo:
   - annotations:
       catalog.cattle.io/display-name: Button Edgecase Demo
+      catalog.cattle.io/release-name: button-edgecase-demo
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-09-18T10:53:11.187646607Z"
+    description: Install the button application for the Fullstaq Edgecase 2023
+    digest: b21ca2c93a98ef07c0320e93f471b1f7a44f37d94ce747a28a74c4c2e57802a4
+    name: button-edgecase-demo
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/button-edgecase-demo-1.0.0/button-edgecase-demo-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      catalog.cattle.io/display-name: Button Edgecase Demo
       catalog.cattle.io/namespace: default
       catalog.cattle.io/release-name: button-edge-demo
     apiVersion: v2
@@ -28,7 +41,34 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/button-edgecase-demo-0.1.3/button-edgecase-demo-0.1.3.tgz
     version: 0.1.3
+  hello-rancher:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-09-18T10:53:11.308581386Z"
+    description: Hello Rancher demo application, web UI showing scale of containers
+    digest: 2fd8d7363ef28fb9a58b26ffb96f9c47021f1cd99388f170334bce1ad9ccf65a
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: hello-rancher
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-1.0.0/hello-rancher-1.0.0.tgz
+    version: 1.0.0
   led-edgecase-demo:
+  - annotations:
+      catalog.cattle.io/display-name: Led Edgecase Demo
+      catalog.cattle.io/release-name: led-edgecase-demo
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-09-18T10:53:11.430664381Z"
+    description: Install the led application for the Fullstaq Edgecase 2023
+    digest: f2a8912c6f508c3eb2e2bb20c43c79c70baa865caadd047c0e60958d80c58178
+    name: led-edgecase-demo
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/led-edgecase-demo-1.0.0/led-edgecase-demo-1.0.0.tgz
+    version: 1.0.0
   - annotations:
       catalog.cattle.io/display-name: Led Edgecase Demo
       catalog.cattle.io/namespace: default
@@ -56,4 +96,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/led-edgecase-demo-0.1.14/led-edgecase-demo-0.1.14.tgz
     version: 0.1.14
-generated: "2023-09-18T10:42:53.455498414Z"
+generated: "2023-09-18T10:53:11.430703782Z"
