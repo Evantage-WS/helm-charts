@@ -1,0 +1,39 @@
+apiVersion: v1
+entries:
+  button-edge-demo:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-09-15T15:21:41.507734392Z"
+    description: Install the button application for the Fullstaq Edgecase 2023
+    digest: 595b7c24fa2b5936d219371e3b9454c2bb131b4422d58f21ff78fe6f57a3cb21
+    name: button-edge-demo
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/button-edge-demo-0.1.2/button-edge-demo-0.1.2.tgz
+    version: 0.1.2
+  hello-rancher:
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2023-05-30T09:57:10.823337492Z"
+    description: Hello Rancher demo application, web UI showing scale of containers
+    digest: c84e8bd07420783cb475c8ec57f83012fc21e8d45bec86b4a26d24d7fbcacba0
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: hello-rancher
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-0.1.1/hello-rancher-0.1.1.tgz
+    version: 0.1.1
+  led-edge-demo:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-09-15T14:28:48.675599085Z"
+    description: Install the led application for the Fullstaq Edgecase 2023
+    digest: 2a40b3dd101106d370466d58467aa2445c382c151e3d4f5849b2ff99e555b8ec
+    name: led-edge-demo
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/led-edge-demo-0.1.6/led-edge-demo-0.1.6.tgz
+    version: 0.1.6
+  generated: "2023-09-15T15:21:41.507753791Z"
