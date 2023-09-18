@@ -4,6 +4,8 @@
 # See https://github.com/rancher/integration-test-charts/blob/master/charts/chartmuseum/v1.6.0/values.yaml
 rancher_min_version: 2.7.0
 rancher_max_version: 2.7.6
+annotations:
+  catalog.cattle.io/namespace: test-wilco-namespace
 questions:
 - variable: led.led.env.mqttPath
   required: true
