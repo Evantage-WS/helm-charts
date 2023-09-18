@@ -1,45 +1,4 @@
 apiVersion: v1
 entries:
-  button-edge-demo:
-  - annotations:
-      catalog.cattle.io/display-name: Button Edgecase Demo
-      catalog.cattle.io/release-name: button-edge-demo
-    apiVersion: v2
-    appVersion: 0.1.0
-    created: "2023-09-18T10:30:58.340060689Z"
-    description: Install the button application for the Fullstaq Edgecase 2023
-    digest: e758ed96d155f29e70e6398418bf5d8c1ef666692b9dba5c6e18d69e4c7b45bf
-    name: button-edge-demo
-    type: application
-    urls:
-    - https://github.com/Evantage-WS/helm-charts/releases/download/button-edge-demo-0.1.3/button-edge-demo-0.1.3.tgz
-    version: 0.1.3
-  led-edge-demo:
-  - annotations:
-      catalog.cattle.io/display-name: Led Edgecase Demo
-      catalog.cattle.io/release-name: led-edge-demo
-    apiVersion: v2
-    appVersion: 0.1.0
-    created: "2023-09-18T10:30:58.460891303Z"
-    description: Install the led application for the Fullstaq Edgecase 2023
-    digest: 51f622c1b84f82ed4b0297455641ecd205709d48e9188f358650345ba145f8be
-    name: led-edge-demo
-    type: application
-    urls:
-    - https://github.com/Evantage-WS/helm-charts/releases/download/led-edge-demo-0.1.14/led-edge-demo-0.1.14.tgz
-    version: 0.1.14
-  - annotations:
-      catalog.cattle.io/display-name: Led Demo Edgecase
-      catalog.cattle.io/namespace: testwilco
-      catalog.cattle.io/release-name: led-demo-edgecase
-    apiVersion: v2
-    appVersion: 0.1.0
-    created: "2023-09-18T08:14:52.709290272Z"
-    description: Install the led application for the Fullstaq Edgecase 2023
-    digest: 6a7449c40d9a9017e91d402147a0adf8f47cb662b7cd55cf605ec9b569075e67
-    name: led-edge-demo
-    type: application
-    urls:
-    - https://github.com/Evantage-WS/helm-charts/releases/download/led-edge-demo-0.1.13/led-edge-demo-0.1.13.tgz
-    version: 0.1.13
-generated: "2023-09-18T10:30:58.460909503Z"
+  button-edgecase-demo:
+  led-edgecase-demo:
