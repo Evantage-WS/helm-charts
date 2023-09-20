@@ -6,6 +6,19 @@ entries:
       catalog.cattle.io/release-name: button-edgecase-demo
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2023-09-20T07:41:24.95540296Z"
+    description: Install the button application for the Fullstaq Edgecase 2023
+    digest: 480f5a3d029e46678a1c42165527146f371f3286512b4af4c95667e8d9feea64
+    name: button-edgecase-demo
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/button-edgecase-demo-1.0.1/button-edgecase-demo-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      catalog.cattle.io/display-name: Button Edgecase Demo
+      catalog.cattle.io/release-name: button-edgecase-demo
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2023-09-18T10:53:11.187646607Z"
     description: Install the button application for the Fullstaq Edgecase 2023
     digest: b21ca2c93a98ef07c0320e93f471b1f7a44f37d94ce747a28a74c4c2e57802a4
@@ -61,6 +74,19 @@ entries:
       catalog.cattle.io/release-name: led-edgecase-demo
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2023-09-20T07:41:25.114650087Z"
+    description: Install the led application for the Fullstaq Edgecase 2023
+    digest: 2261f7ae17ea295b8adf4800f9c08d42cdbc57777a99f6934cd353bfd29a5a84
+    name: led-edgecase-demo
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/led-edgecase-demo-1.0.1/led-edgecase-demo-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      catalog.cattle.io/display-name: Led Edgecase Demo
+      catalog.cattle.io/release-name: led-edgecase-demo
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2023-09-18T10:53:11.430664381Z"
     description: Install the led application for the Fullstaq Edgecase 2023
     digest: f2a8912c6f508c3eb2e2bb20c43c79c70baa865caadd047c0e60958d80c58178
@@ -96,4 +122,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/led-edgecase-demo-0.1.14/led-edgecase-demo-0.1.14.tgz
     version: 0.1.14
-generated: "2023-09-18T10:53:11.430703782Z"
+generated: "2023-09-20T07:41:25.114772393Z"
