@@ -6,6 +6,23 @@ entries:
       catalog.cattle.io/release-name: evantage-nettools
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2024-07-04T15:59:38.72796293Z"
+    description: A container with network tools on SLE Base Container Image, based
+      on github.com/nicolaka/netshoot
+    digest: 2639670d5d21ae7206b703a58d4f145f35aebd84107defe668f61fd829792fa0
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: evantage-nettools
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/evantage-nettools-1.0.4/evantage-nettools-1.0.4.tgz
+    version: 1.0.4
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Nettools
+      catalog.cattle.io/release-name: evantage-nettools
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2024-07-04T14:07:15.978591482Z"
     description: A container with network tools on SLE Base Container Image, based
       on github.com/nicolaka/netshoot
@@ -16,6 +33,22 @@ entries:
     - https://github.com/Evantage-WS/helm-charts/releases/download/evantage-nettools-1.0.3/evantage-nettools-1.0.3.tgz
     version: 1.0.3
   hello-rancher:
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Hello Rancher
+      catalog.cattle.io/release-name: evantage-hello-ranhcer
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-07-04T15:59:38.834095926Z"
+    description: Hello Rancher demo application, web UI showing scale of containers
+    digest: dbc3f4a01bfb8507af948f13589337c8319b9d5d923360295757f8f69490ee29
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: hello-rancher
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-1.0.3/hello-rancher-1.0.3.tgz
+    version: 1.0.3
   - apiVersion: v2
     appVersion: 1.0.1
     created: "2024-07-04T13:59:19.785412657Z"
@@ -29,4 +62,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-1.0.2/hello-rancher-1.0.2.tgz
     version: 1.0.2
-generated: "2024-07-04T14:07:15.978601652Z"
+generated: "2024-07-04T15:59:38.834230107Z"
