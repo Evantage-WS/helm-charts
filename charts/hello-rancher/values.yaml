@@ -6,7 +6,7 @@ replicaCount: 5
 
 image:
   repository: evantage/hello-rancher
-  tag: 1.0.1
+  tag: latest
   pullPolicy: IfNotPresent
 
 nameOverride: ""
