@@ -1,4 +1,19 @@
 apiVersion: v1
 entries:
-  button-edgecase-demo:
-  led-edgecase-demo:
+  button-edgecase-demo: null
+  hello-rancher:
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2024-07-04T13:59:19.785412657Z"
+    description: Hello Rancher demo application, web UI showing scale of containers
+    digest: 250bf7eb421efabba42858877cefbc71434b4ab16616d83b35c75c5852095ec3
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: hello-rancher
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-1.0.2/hello-rancher-1.0.2.tgz
+    version: 1.0.2
+  led-edgecase-demo: null
+generated: "2024-07-04T13:59:19.785421363Z"
