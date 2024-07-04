@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "button-edge-demo.fullname" . }}-button
+  labels:
+    app: button
+  {{- include "button-edge-demo.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.button.replicas }}
+  selector:
+    matchLabels:
+      app: button
+    {{- include "button-edge-demo.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        app: button
+      {{- include "button-edge-demo.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - env:
+        - name: MQTT_PATH
+          value: {{ quote .Values.button.button.env.mqttPath }}
+        - name: KUBERNETES_CLUSTER_DOMAIN
+          value: {{ quote .Values.kubernetesClusterDomain }}
+        image: {{ .Values.button.button.image.repository }}:{{ .Values.button.button.image.tag
+          | default .Chart.AppVersion }}
+        name: button
+        securityContext:
+          privileged: true
+          runAsUser: 0
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/localtime
+          name: localtime
+      restartPolicy: Always
+      volumes:
+      - hostPath:
+          path: /usr/share/zoneinfo/Europe/Amsterdam
+        name: localtime

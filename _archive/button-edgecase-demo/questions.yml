@@ -1,0 +1,28 @@
+# For Rancher
+# See https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/helm-charts-in-rancher/create-apps
+# See https://github.com/rancher/integration-test-charts/blob/master/charts/chartmuseum/v1.6.0/questions.yml
+# See https://github.com/rancher/integration-test-charts/blob/master/charts/chartmuseum/v1.6.0/values.yaml
+questions:
+- variable: button.button.env.mqttPath
+  required: true
+  default: ""
+  description: "Which channel to use in the messagequeue for communication between the LED and the BUTTON container"
+  type: enum
+  label: Which messagequeue channel to use
+  group: "Storage Options"
+  options:
+    - "01"
+    - "02"
+    - "03"
+    - "04"
+    - "05"
+    - "06"
+    - "07"
+    - "08"
+    - "09"
+    - "10"
+    - "11"
+    - "12"
+    - "13"
+    - "14"
+    - "15"

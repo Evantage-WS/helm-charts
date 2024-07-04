@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "led-edge-demo.fullname" . }}-led
+  labels:
+    app: led
+  {{- include "led-edge-demo.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.led.replicas }}
+  selector:
+    matchLabels:
+      app: led
+    {{- include "led-edge-demo.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        app: led
+      {{- include "led-edge-demo.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - env:
+        - name: MQTT_PATH
+          value: {{ quote .Values.led.led.env.mqttPath }}
+        - name: KUBERNETES_CLUSTER_DOMAIN
+          value: {{ quote .Values.kubernetesClusterDomain }}
+        image: {{ .Values.led.led.image.repository }}:{{ .Values.led.led.image.tag | default
+          .Chart.AppVersion }}
+        name: led
+        securityContext:
+          privileged: true
+          runAsUser: 0
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/localtime
+          name: localtime
+      restartPolicy: Always
+      volumes:
+      - hostPath:
+          path: /usr/share/zoneinfo/Europe/Amsterdam
+        name: localtime
