@@ -1,0 +1,15 @@
+app:
+  args:
+  - while true; do sleep 30; done;
+  image:
+    repository: evantage/nettools
+    tag: latest
+  resources:
+    limits:
+      cpu: 100m
+      memory: 100Mi
+    requests:
+      cpu: 100m
+      memory: 100Mi
+replicas: 1
+fullnameOverride: debug
