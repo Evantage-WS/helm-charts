@@ -1,9 +1,0 @@
-kubernetesClusterDomain: cluster.local
-led:
-  led:
-    env:
-      mqttPath:
-    image:
-      repository: jurrien/led
-      tag: latest
-  replicas: 1

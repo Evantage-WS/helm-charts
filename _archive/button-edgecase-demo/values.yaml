@@ -1,9 +1,0 @@
-button:
-  button:
-    env:
-      mqttPath: ""
-    image:
-      repository: jurrien/button
-      tag: latest
-  replicas: 1
-kubernetesClusterDomain: cluster.local
