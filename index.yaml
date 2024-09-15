@@ -32,6 +32,23 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/evantage-nettools-1.0.3/evantage-nettools-1.0.3.tgz
     version: 1.0.3
+  game-2048:
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Game 2048
+      catalog.cattle.io/release-name: evantage-game-2048
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-09-15T19:07:21.37658782Z"
+    description: Game 2048
+    digest: f9866c338b3ccf55309f1bae31fa3a491e723d39a1a885707346580a5e095214
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: game-2048
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/game-2048-1.0.1/game-2048-1.0.1.tgz
+    version: 1.0.1
   hello-rancher:
   - annotations:
       catalog.cattle.io/display-name: Evantage Hello Rancher
@@ -62,4 +79,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-1.0.2/hello-rancher-1.0.2.tgz
     version: 1.0.2
-generated: "2024-07-04T15:59:38.834230107Z"
+generated: "2024-09-15T19:07:21.37660364Z"
