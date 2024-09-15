@@ -2,8 +2,8 @@ apiVersion: v2
 name: game-2048
 description: Game 2048
 type: application
-version: 0.1.3
-appVersion: 0.1.3
+version: 0.1.5
+appVersion: 0.1.5
 maintainers:
   - name: evantage
     email: helm@evantage.nl
