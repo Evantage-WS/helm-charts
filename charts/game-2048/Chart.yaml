@@ -1,0 +1,12 @@
+apiVersion: v2
+name: game-2048
+description: Game 2048
+type: application
+version: 1.0.0
+appVersion: 1.0.0
+maintainers:
+  - name: evantage
+    email: helm@evantage.nl
+annotations:
+  catalog.cattle.io/display-name: Evantage Game 2048
+  catalog.cattle.io/release-name: evantage-game-2048
