@@ -1,5 +1,27 @@
 apiVersion: v1
 entries:
+  evantage-dvwa:
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Nettools
+      catalog.cattle.io/release-name: evantage-nettools
+    apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-12-08T16:25:23.785863974Z"
+    dependencies:
+    - name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.1.0
+    description: Damn Vulnerable Web Application (DVWA), its main goal is to be an
+      aid for security professionals to test their skills and tools
+    digest: b49ee00e76387a5e42d807def6767a0129dd23508c2f627b4e83e5713e98aab8
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: evantage-dvwa
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/evantage-dvwa-0.1.0/evantage-dvwa-0.1.0.tgz
+    version: 0.1.0
   evantage-nettools:
   - annotations:
       catalog.cattle.io/display-name: Evantage Nettools
@@ -32,6 +54,23 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/evantage-nettools-1.0.3/evantage-nettools-1.0.3.tgz
     version: 1.0.3
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Nettools
+      catalog.cattle.io/release-name: evantage-nettools
+    apiVersion: v2
+    appVersion: 1.0.4
+    created: "2024-12-08T16:25:23.879798732Z"
+    description: A container with network tools on SLE Base Container Image, based
+      on github.com/nicolaka/netshoot
+    digest: 998a5ef7fef2521bde27a4f5f8b4bd559bf690aac220ba92d38f46713d7fd263
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: evantage-nettools
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/evantage-nettools-1.0.0/evantage-nettools-1.0.0.tgz
+    version: 1.0.0
   game-2048:
   - annotations:
       catalog.cattle.io/display-name: Evantage Game 2048
@@ -65,6 +104,22 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/game-2048-1.0.1/game-2048-1.0.1.tgz
     version: 1.0.1
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Game 2048
+      catalog.cattle.io/release-name: evantage-game-2048
+    apiVersion: v2
+    appVersion: 1.0.3
+    created: "2024-12-08T16:25:23.968600802Z"
+    description: Game 2048
+    digest: b03514cfcfde4bda62f0472c9db98284b123add0de609c1efc06a76353b72f44
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: game-2048
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/game-2048-1.0.0/game-2048-1.0.0.tgz
+    version: 1.0.0
   hello-rancher:
   - annotations:
       catalog.cattle.io/display-name: Evantage Hello Rancher
@@ -95,4 +150,20 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-1.0.2/hello-rancher-1.0.2.tgz
     version: 1.0.2
-generated: "2024-12-08T06:52:09.458438427Z"
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Hello Rancher
+      catalog.cattle.io/release-name: evantage-hello-ranhcer
+    apiVersion: v2
+    appVersion: 1.0.4
+    created: "2024-12-08T16:25:24.066957769Z"
+    description: Hello Rancher demo application, web UI showing scale of containers
+    digest: 21acc66e5e3aeb2a204ad4eff727c2d5c79f52fab21602bd614754bc9c056a4e
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: hello-rancher
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-1.0.0/hello-rancher-1.0.0.tgz
+    version: 1.0.0
+generated: "2024-12-08T16:25:24.066986563Z"
