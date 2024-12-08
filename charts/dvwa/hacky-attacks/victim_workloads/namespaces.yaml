@@ -1,0 +1,17 @@
+# Thanks to https://hub.docker.com/u/olegvorobyov90
+
+# Avalon is a mythical island featured in the Arthurian legend. It first appeared in Geoffrey of
+# Monmouth's 1136 Historia Regum Britanniae as a place of magic where King Arthur's sword Excalibur
+# was made and later where Arthur was taken to recover from being gravely wounded at the Battle of Camlann.
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: avalon
+
+# dakrforce - mysterious and powerful
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: darkforce

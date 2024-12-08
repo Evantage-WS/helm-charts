@@ -1,0 +1,28 @@
+# Thanks to https://hub.docker.com/u/olegvorobyov90
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: icmp-victim
+  namespace: avalon
+spec:
+  serviceName: "icmp-victim"
+  replicas: 1
+  selector:
+    matchLabels:
+      app: icmp-pod
+  template:
+    metadata:
+      labels:
+        app: icmp-pod
+    spec:
+      containers:
+      - name: flood-victim
+        image: evantage/flood-victim-leap15:0.2
+        ports:
+        - containerPort: 80
+        command: ["/bin/bash", "-c", "nginx & tcpdump -n '(icmp or tcp port 80)'"]
+        securityContext:
+          capabilities:
+            add:
+            - NET_ADMIN
+            - NET_RAW

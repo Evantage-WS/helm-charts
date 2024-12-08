@@ -1,0 +1,14 @@
+# Thanks to https://hub.docker.com/u/olegvorobyov90
+apiVersion: v1
+kind: Service
+metadata:
+  name: icmp-victim
+  namespace: avalon
+spec:
+  clusterIP: None
+  ports:
+    - port: 80
+      targetPort: 80
+  type: ClusterIP
+  selector:
+    app: icmp-pod
