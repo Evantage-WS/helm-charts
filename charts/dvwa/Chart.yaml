@@ -1,6 +1,13 @@
+# See https://github.com/digininja/DVWA
 apiVersion: v2
-name: dvwa
-description: A Helm chart for DVWA
+name: evantage-dvwa
+description: Damn Vulnerable Web Application (DVWA), its main goal is to be an aid for security professionals to test their skills and tools
+maintainers:
+  - name: evantage
+    email: helm@evantage.nl
+annotations:
+  catalog.cattle.io/display-name: Evantage Nettools
+  catalog.cattle.io/release-name: evantage-nettools
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -21,7 +28,7 @@ version: 0.1.0
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
-appVersion: "9ca729d"
+appVersion: 0.1.0
 
 dependencies:
   - name: mysql
