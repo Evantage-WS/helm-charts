@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "nettools.fullname" . }}-evantage-nettools
+  labels:
+    app: evantage-nettools
+  {{- include "nettools.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.debugEvantageNettools.type }}
+  selector:
+    app: evantage-nettools
+    {{- include "nettools.selectorLabels" . | nindent 4 }}
+  ports:
+  {{- .Values.ports | toYaml | nindent 2 }}
