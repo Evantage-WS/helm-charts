@@ -12,5 +12,6 @@ app:
       cpu: 100m
       memory: 100Mi
   ports: 80
+  type: ClusterIP
 replicas: 1
 fullnameOverride: debug
