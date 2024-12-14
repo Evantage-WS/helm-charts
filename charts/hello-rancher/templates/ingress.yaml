@@ -26,7 +26,7 @@ spec:
   {{- end }}
 {{- end }}
 {{- if .Values.ingress.ingressClassName }}
-  ingressClassName: {{ Values.ingress.ingressClassName }}
+  ingressClassName: {{ .Values.ingress.ingressClassName }}
 {{- end }}
   rules:
     - host: {{ .Values.ingress.host | quote }}
