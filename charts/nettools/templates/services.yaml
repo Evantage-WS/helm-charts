@@ -1,14 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "nettools.fullname" . }}-evantage-nettools
-  labels:
-    app: evantage-nettools
-  {{- include "nettools.labels" . | nindent 4 }}
+  name: {{ include "nettools.name" . }}
 spec:
-  type: {{ .Values.type }}
-  selector:
-    app: evantage-nettools
-    {{- include "nettools.selectorLabels" . | nindent 4 }}
+  type: {{ .Values.service.type }}
   ports:
-  {{- .Values.ports | toYaml | nindent 2 }}
+    - port: {{ .Values.service.port }}
+      targetPort: 80
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ include "nettools.name" . }}

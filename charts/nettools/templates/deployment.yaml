@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "nettools.fullname" . }}-evantage-nettools
+  name: {{ include "nettools.name" . }}
   labels:
     app: evantage-nettools
   {{- include "nettools.labels" . | nindent 4 }}
@@ -26,9 +26,9 @@ spec:
         env:
         - name: KUBERNETES_CLUSTER_DOMAIN
           value: {{ quote .Values.kubernetesClusterDomain }}
-        image: {{ .Values.app.image.repository }}:{{ .Values.app.image.tag
+        image: {{ .Values.image.repository }}:{{ .Values.image.tag
           | default .Chart.AppVersion }}
         name: evantage-nettools
-        resources: {{- toYaml .Values.app.resources | nindent
+        resources: {{- toYaml .Values.resources | nindent
           10 }}
       restartPolicy: Always
