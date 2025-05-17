@@ -1,5 +1,52 @@
 apiVersion: v1
 entries:
   evantage-nettools:
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Nettools
+      catalog.cattle.io/release-name: evantage-nettools
+    apiVersion: v2
+    appVersion: 1.0.1
+    created: "2024-12-14T13:58:01.829338295Z"
+    description: A container with network tools on SLE Base Container Image, based
+      on github.com/nicolaka/netshoot
+    digest: e580f8f64a54569810eec879c087e457a702bd30f74422a70938d596f417d862
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: evantage-nettools
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/evantage-nettools-1.0.0/evantage-nettools-1.0.0.tgz
+    version: 1.0.0
   hello-rancher:
-  hello-kubernetes:
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Hello Rancher
+      catalog.cattle.io/release-name: evantage-hello-ranhcer
+    apiVersion: v2
+    appVersion: 1.0.1
+    created: "2024-12-14T13:58:01.93001278Z"
+    description: Hello Rancher demo application, web UI showing scale of containers
+    digest: 77bf94a3d23fef70cb1c12e27a6682882929bc4e1460f353d45aa05898b14e7c
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: hello-rancher
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-1.0.0/hello-rancher-1.0.0.tgz
+    version: 1.0.0
+hello-kubernetes:
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Hello Kubernetes
+      catalog.cattle.io/release-name: evantage-hello-kubernetes
+    apiVersion: v2
+    appVersion: 1.0.1
+    description: Hello Kubernetes demo application
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: hello-kubernetes
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/hello-kubernetes-1.0.0/hello-rancher-1.0.0.tgz
+    version: 1.0.0
