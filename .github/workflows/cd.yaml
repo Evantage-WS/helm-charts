@@ -42,9 +42,6 @@
         # https://github.com/Azure/setup-helm
         - name: Install Helm
           uses: azure/setup-helm@v4
-          with:
-            token: ${{ secrets.GITHUB_TOKEN }}
-            version: 3.10.1
         # https://github.com/helm/chart-releaser-action
         - name: Host charts repository on GitHub Pages
           uses: helm/chart-releaser-action@v1.7.0
@@ -61,6 +58,8 @@
         # https://github.com/halkeye/helm-repo-html
         - name: Setup Go environment
           uses: actions/setup-go@v5
+          with:
+              cache: false
         - name: Generate index.html
           run: |
             go install github.com/halkeye/helm-repo-html@v0.2.1
