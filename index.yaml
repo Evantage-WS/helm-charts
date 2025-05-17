@@ -69,5 +69,21 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-1.0.0/hello-rancher-1.0.0.tgz
     version: 1.0.0
-  space-station-control-center: null
-generated: "2025-05-17T15:28:58.581814504Z"
+  space-station-control-center:
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Space Station Control Center
+      catalog.cattle.io/release-name: evantage-space-station-control-center
+    apiVersion: v2
+    appVersion: 1.0.1
+    created: "2025-05-17T15:41:40.318376766Z"
+    description: A Helm chart for the Space Station Control Center application
+    digest: cebf836a3fe98377dbad40c76bf982a1d251ed4f164ef4aab0650ccbaa500985
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: space-station-control-center
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/space-station-control-center-1.0.0/space-station-control-center-1.0.0.tgz
+    version: 1.0.0
+generated: "2025-05-17T15:41:40.318398057Z"
