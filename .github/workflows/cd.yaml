@@ -48,8 +48,10 @@
         # https://github.com/helm/chart-releaser-action
         - name: Host charts repository on GitHub Pages
           uses: helm/chart-releaser-action@v1.4.1
-          env:
-            CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          # env:
+            # CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          with:
+            token: ${{ secrets.GITHUB_TOKEN }}
         # important: it needs to be done in the same pipeline as another pages workflow won't be triggered by the pust on the gh-pages branch
         # (tried with a PAT and several options but didn't work)
         # https://github.com/actions/checkout
