@@ -35,7 +35,7 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-1.0.0/hello-rancher-1.0.0.tgz
     version: 1.0.0
-hello-kubernetes:
+  hello-kubernetes:
   - annotations:
       catalog.cattle.io/display-name: Evantage Hello Kubernetes
       catalog.cattle.io/release-name: evantage-hello-kubernetes
