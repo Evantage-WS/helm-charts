@@ -43,7 +43,7 @@
         - name: Install Helm
           uses: azure/setup-helm@v3
           with:
-            # token: ${{ secrets.GITHUB_TOKEN }}
+            token: ${{ secrets.GITHUB_TOKEN }}
             version: 3.10.1
         # https://github.com/helm/chart-releaser-action
         - name: Host charts repository on GitHub Pages
