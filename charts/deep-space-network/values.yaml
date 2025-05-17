@@ -5,9 +5,7 @@ nginx:
   image: nginx:latest
   replicas: 1
   ingress:
-    annotations:
-      cert-manager.io/cluster-issuer: letsencrypt-prod
-    host: "deep-space-network.local"
+    host: "sslip.io"
 
 k6:
   loadTest:
