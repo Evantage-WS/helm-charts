@@ -1,5 +1,22 @@
 apiVersion: v1
 entries:
+  control-room:
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Control Room
+      catalog.cattle.io/release-name: evantage-control-room
+    apiVersion: v2
+    appVersion: 1.0.1
+    created: "2025-05-17T15:04:59.144364409Z"
+    description: A Helm chart for the Control Room application
+    digest: 9ca1d0a386bedce3b5cff8067459265e08e3eba449c7d9c294a14fe3a352a2cf
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: control-room
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/control-room-1.0.0/control-room-1.0.0.tgz
+    version: 1.0.0
   deep-space-network:
   - annotations:
       catalog.cattle.io/display-name: Evantage Deep Space Networ
@@ -69,4 +86,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-1.0.0/hello-rancher-1.0.0.tgz
     version: 1.0.0
-generated: "2025-05-17T08:01:18.227442598Z"
+generated: "2025-05-17T15:05:00.251189661Z"
