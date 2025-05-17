@@ -3,7 +3,7 @@ nginx:
   image: nginx:latest
   replicas: 1
   ingress:
-    host: "control-room.local"
+    host: "space-station-control-center.local"
 
 k6:
   loadTest:

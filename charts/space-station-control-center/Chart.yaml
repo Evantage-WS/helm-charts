@@ -1,12 +1,12 @@
 apiVersion: v2
 name: control-room
-description: A Helm chart for the Control Room application
+description: A Helm chart for the Space Station Control Center application
 maintainers:
   - name: evantage
     email: helm@evantage.nl
 annotations:
-  catalog.cattle.io/display-name: Evantage Control Room
-  catalog.cattle.io/release-name: evantage-control-room
+  catalog.cattle.io/display-name: Evantage Space Station Control Center
+  catalog.cattle.io/release-name: evantage-space-station-control-center
 
 # A chart can be either an 'application' or a 'library' chart.
 #
