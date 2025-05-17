@@ -35,12 +35,16 @@ jobs:
         with:
           # note: important to have chart-testing work (see https://github.com/helm/chart-testing/issues/186)
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Install Helm
         uses: azure/setup-helm@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Install Python
         uses: actions/setup-python@v4
         with:
           python-version: 3.11
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Install chart-testing
         uses: helm/chart-testing-action@v2.3.1
       - name: List changed charts
