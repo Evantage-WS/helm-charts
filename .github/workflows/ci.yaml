@@ -38,8 +38,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Install Helm
         uses: azure/setup-helm@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Install Python
         uses: actions/setup-python@v5
         with:
