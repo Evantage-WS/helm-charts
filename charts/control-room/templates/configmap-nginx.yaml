@@ -1,0 +1,156 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-config
+  labels:
+    app.kubernetes.io/name: {{ .Chart.Name }}
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>🚀 Space Station Control Center</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          background: radial-gradient(circle, #000428, #004e92);
+          color: white;
+          margin: 0;
+          padding: 0;
+        }
+        h1 {
+          color: cyan;
+          margin: 20px;
+        }
+        .torus-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 400px; /* Reserved height for the torus section */
+          overflow: hidden;
+        }
+        canvas {
+          display: block;
+          background: transparent;
+        }
+        .status {
+          font-size: 18px;
+          margin-top: 20px;
+        }
+        .status p {
+          margin: 5px 0;
+        }
+        .alerts {
+          margin-top: 20px;
+          padding: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          background: rgba(255, 255, 255, 0.1);
+          display: inline-block;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>🚀 Space Station Control Center</h1>
+
+      <!-- Torus Section -->
+      <div class="torus-container">
+        <canvas id="torusCanvas"></canvas>
+      </div>
+
+      <!-- Status Section -->
+      <div class="status">
+        <p>Status: <span style="color: lime;">All systems nominal</span></p>
+        <p>Traffic Data: Flowing steadily</p>
+      </div>
+
+      <!-- Alerts Section -->
+      <div class="alerts">
+        <p>🚨 Alert: Cosmic radiation detected! Shields are holding.</p>
+      </div>
+
+      <script>
+        const canvas = document.getElementById("torusCanvas");
+        const ctx = canvas.getContext("2d");
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const TORUS_RADIUS = 150; // Radius of the torus
+        const TUBE_RADIUS = 50;  // Radius of the tube
+        const SEGMENTS = 32;     // Number of tube segments
+        const RINGS = 64;        // Number of rings around the torus
+        const COLORS = ["#FF0000", "#00FF00", "#0000FF", "#FF00FF", "#00FFFF"]; // Color gradients
+        const ROTATION_SPEED = 0.02;
+
+        let rotationX = 0;
+        let rotationY = 0;
+
+        function drawTorus() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          ctx.save();
+          ctx.translate(canvas.width / 2, canvas.height / 2);
+
+          for (let i = 0; i < RINGS; i++) {
+            const theta = (i / RINGS) * Math.PI * 2; // Angle for the ring
+            const ringX = TORUS_RADIUS * Math.cos(theta);
+            const ringY = TORUS_RADIUS * Math.sin(theta);
+
+            for (let j = 0; j < SEGMENTS; j++) {
+              const phi = (j / SEGMENTS) * Math.PI * 2; // Angle for the tube
+              const x = (TORUS_RADIUS + TUBE_RADIUS * Math.cos(phi)) * Math.cos(theta);
+              const y = (TORUS_RADIUS + TUBE_RADIUS * Math.cos(phi)) * Math.sin(theta);
+              const z = TUBE_RADIUS * Math.sin(phi);
+
+              // Rotate the torus
+              const rotatedX =
+                x * Math.cos(rotationY) - z * Math.sin(rotationY);
+              const rotatedZ =
+                x * Math.sin(rotationY) + z * Math.cos(rotationY);
+
+              const finalX =
+                rotatedX * Math.cos(rotationX) - y * Math.sin(rotationX);
+              const finalY =
+                rotatedX * Math.sin(rotationX) + y * Math.cos(rotationX);
+
+              const size = Math.max(0.5, 2 + rotatedZ / 100);
+
+              // Choose gradient color
+              const colorIndex = Math.floor((j / SEGMENTS) * COLORS.length);
+              ctx.fillStyle = COLORS[colorIndex];
+              ctx.beginPath();
+              ctx.arc(finalX, finalY, size, 0, Math.PI * 2);
+              ctx.fill();
+            }
+          }
+
+          ctx.restore();
+        }
+
+        function animate() {
+          rotationX += ROTATION_SPEED * 0.5;
+          rotationY += ROTATION_SPEED;
+          drawTorus();
+          requestAnimationFrame(animate);
+        }
+
+        // Dynamic status updates
+        function updateStatus() {
+          const statuses = [
+            "All systems nominal",
+            "Minor anomalies detected, under control",
+            "Power rerouting in progress",
+            "Communications delay detected",
+          ];
+          const randomStatus = statuses[Math.floor(Math.random() * statuses.length)];
+          document.querySelector(".status p:nth-child(1)").innerHTML = `Status: <span style="color: lime;">${randomStatus}</span>`;
+        }
+
+        // Start animation and status updates
+        animate();
+        setInterval(updateStatus, 5000);
+      </script>
+    </body>
+    </html>

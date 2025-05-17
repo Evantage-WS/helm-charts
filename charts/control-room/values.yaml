@@ -1,0 +1,11 @@
+nginx:
+  # Pull the latest nginx image from Docker Hub
+  image: nginx:latest
+  replicas: 1
+  ingress:
+    host: "control-room.local"
+
+k6:
+  loadTest:
+    duration: "60m"
+    vus: 10
