@@ -1,6 +1,72 @@
 apiVersion: v1
 entries:
   control-room:
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Control Room
+      catalog.cattle.io/release-name: evantage-control-room
+    apiVersion: v2
+    appVersion: 1.0.1
+    created: "2025-05-17T15:13:59.528952082Z"
+    description: A Helm chart for the Control Room application
+    digest: 8ef734461dea15835b4b3d47fd6e7899fd8f5879bcdec449b5c5f0521ec73ba7
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: control-room
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/control-room-1.0.0/control-room-1.0.0.tgz
+    version: 1.0.0
   deep-space-network:
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Deep Space Network
+      catalog.cattle.io/release-name: evantage-deep-space-network
+    apiVersion: v2
+    appVersion: 1.0.1
+    created: "2025-05-17T15:13:59.637734848Z"
+    description: A Helm chart for the Deep Space Network application
+    digest: 7dc98bbdc03ce8335a7ab9eb042f5b36a67ebec795a24daf9ef23587275a51b0
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: deep-space-network
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/deep-space-network-1.0.0/deep-space-network-1.0.0.tgz
+    version: 1.0.0
   evantage-nettools:
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Nettools
+      catalog.cattle.io/release-name: evantage-nettools
+    apiVersion: v2
+    appVersion: 1.0.1
+    created: "2025-05-17T15:13:59.78580957Z"
+    description: A container with network tools on SLE Base Container Image, based
+      on github.com/nicolaka/netshoot
+    digest: f50cf018cac462b87393524fbf137c2498ec5f2e9a2a5c287dcc20c78c7cc6b4
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: evantage-nettools
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/evantage-nettools-1.0.0/evantage-nettools-1.0.0.tgz
+    version: 1.0.0
   hello-rancher:
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Hello Rancher
+      catalog.cattle.io/release-name: evantage-hello-ranhcer
+    apiVersion: v2
+    appVersion: 1.0.1
+    created: "2025-05-17T15:13:59.971896956Z"
+    description: Hello Rancher demo application, web UI showing scale of containers
+    digest: ae8e4164cb2b20393205aed78dfe4e07b6b6fa52aa0299ebef7c148b349ee892
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: hello-rancher
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-1.0.0/hello-rancher-1.0.0.tgz
+    version: 1.0.0
+generated: "2025-05-17T15:13:59.971906715Z"
