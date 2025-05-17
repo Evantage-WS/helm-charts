@@ -76,7 +76,7 @@
             destination: ./_site
         # https://github.com/actions/upload-pages-artifact
         - name: Upload artifact
-          uses: actions/upload-pages-artifact@v
+          uses: actions/upload-pages-artifact@v3
     deploy:
       # https://github.com/actions/deploy-pages
       environment:
