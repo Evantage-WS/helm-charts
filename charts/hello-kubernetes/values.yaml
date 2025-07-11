@@ -8,6 +8,4 @@ ingress:
   host: "hello-kubernetes.local"
 service:
   type: ClusterIP
-ports:
-- port: 80
-  targetPort: 8080
+

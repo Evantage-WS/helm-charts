@@ -4,7 +4,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: {{ $fullName }}
+  name: {{ $fullName }}-ingress
   labels:
     app.kubernetes.io/name: {{ include "rancher-demo.name" . }}
     helm.sh/chart: {{ include "rancher-demo.chart" . }}
