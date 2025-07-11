@@ -41,6 +41,22 @@ entries:
       catalog.cattle.io/release-name: evantage-hello-kubernetes
     apiVersion: v2
     appVersion: 1.0.1
+    created: "2025-07-11T14:16:57.604720859Z"
+    description: A Helm chart for the Hello Kubernetes application
+    digest: 8e75b0e455b2f5192f25f4dd4c2e33a9eef3199f9d23fc7b38fbcbf30fae49c7
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: hello-kubernetes
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/hello-kubernetes-1.0.4/hello-kubernetes-1.0.4.tgz
+    version: 1.0.4
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Hello Kubernetes
+      catalog.cattle.io/release-name: evantage-hello-kubernetes
+    apiVersion: v2
+    appVersion: 1.0.1
     created: "2025-07-11T13:40:09.864016148Z"
     description: A Helm chart for the Hello Kubernetes application
     digest: fa1e16a40fec7be0e12f55ab3c47290b68e0de8bb39ee3772bc8658ab7397e82
@@ -150,4 +166,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/space-station-control-center-1.0.0/space-station-control-center-1.0.0.tgz
     version: 1.0.0
-generated: "2025-07-11T13:40:09.86403846Z"
+generated: "2025-07-11T14:16:57.604743892Z"
