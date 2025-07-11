@@ -41,6 +41,22 @@ entries:
       catalog.cattle.io/release-name: evantage-hello-kubernetes
     apiVersion: v2
     appVersion: 1.0.1
+    created: "2025-07-11T13:29:11.114551911Z"
+    description: A Helm chart for the Hello Kubernetes application
+    digest: a4cb4247bae9ba94650c3253cf9742108584ba077ffe910aab3ef880532a3461
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: hello-kubernetes
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/hello-kubernetes-1.0.2/hello-kubernetes-1.0.2.tgz
+    version: 1.0.2
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Hello Kubernetes
+      catalog.cattle.io/release-name: evantage-hello-kubernetes
+    apiVersion: v2
+    appVersion: 1.0.1
     created: "2025-07-11T13:04:47.643498126Z"
     description: A Helm chart for the Hello Kubernetes application
     digest: 4916cc35d57c12fdf7d67fbff22322377b31411a789e1a423292ceb45d894d26
@@ -74,6 +90,22 @@ entries:
       catalog.cattle.io/release-name: evantage-hello-ranhcer
     apiVersion: v2
     appVersion: 1.0.1
+    created: "2025-07-11T13:29:11.222512803Z"
+    description: Hello Rancher demo application, web UI showing scale of containers
+    digest: 9c2ca066d9b6c9333652c74a5d01e49e195a064196b3e28de683a2f1b4d28291
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: hello-rancher
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-1.0.1/hello-rancher-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Hello Rancher
+      catalog.cattle.io/release-name: evantage-hello-ranhcer
+    apiVersion: v2
+    appVersion: 1.0.1
     created: "2025-05-17T15:47:29.718850793Z"
     description: Hello Rancher demo application, web UI showing scale of containers
     digest: 36f6457e19e7f735867d13b636a1fc2672cf0d75f67c9cf5117dd4aa279ca199
@@ -102,4 +134,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/space-station-control-center-1.0.0/space-station-control-center-1.0.0.tgz
     version: 1.0.0
-generated: "2025-07-11T13:04:47.643508766Z"
+generated: "2025-07-11T13:29:11.222533882Z"
