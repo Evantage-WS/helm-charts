@@ -1,0 +1,13 @@
+  helloKubernetes:
+    env:
+      message: I just deployed this on Kubernetes, it's working!
+    image:
+      repository: evantage/hello-kubernetes
+      tag: latest
+  ports:
+  - port: 80
+    targetPort: 8080
+  replicas: 1
+  type: ClusterIP
+  ingress:
+    host: sslip.io
