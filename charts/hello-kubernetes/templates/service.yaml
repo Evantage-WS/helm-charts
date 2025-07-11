@@ -1,13 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "hello-kubernetes.fullname" . }}
+  name: {{ .Release.Name }}-service
   labels:
-  {{- include "hello-kubernetes.labels" . | nindent 4 }}
+    app.kubernetes.io/name: {{ .Chart.Name }}
 spec:
-  type: {{ .Values.helloKubernetes.type }}
+  type: {{ .Values.service.type }}
   selector:
-    app: hello-kubernetes
-    {{- include "hello-kubernetes.selectorLabels" . | nindent 4 }}
+    app: {{ .Release.Name }}
   ports:
-  {{- .Values.helloKubernetes.ports | toYaml | nindent 2 }}
+  - protocol: TCP
+    port: 80
+    targetPort: 80

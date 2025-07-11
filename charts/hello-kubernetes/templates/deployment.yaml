@@ -1,42 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "hello-kubernetes.fullname" . }}
+  name: {{ .Release.Name }}
   labels:
-  {{- include "hello-kubernetes.labels" . | nindent 4 }}
+    app: {{ .Release.Name }}
+    app.kubernetes.io/name: {{ .Chart.Name }}
 spec:
-  replicas: {{ .Values.helloKubernetes.replicas }}
+  replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
-      app: hello-kubernetes
-    {{- include "hello-kubernetes.selectorLabels" . | nindent 6 }}
+      app: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app: hello-kubernetes
-      {{- include "hello-kubernetes.selectorLabels" . | nindent 8 }}
+        app: {{ .Release.Name }}
+        app.kubernetes.io/name: {{ .Chart.Name }}
     spec:
       containers:
-      - env:
-        - name: MESSAGE
-          value: {{ quote .Values.helloKubernetes.env.message }}
-        - name: KUBERNETES_NAMESPACE
-          valueFrom:
-            fieldRef:
-              fieldPath: metadata.namespace
-        - name: KUBERNETES_POD_NAME
-          valueFrom:
-            fieldRef:
-              fieldPath: metadata.name
-        - name: KUBERNETES_NODE_NAME
-          valueFrom:
-            fieldRef:
-              fieldPath: spec.nodeName
-        - name: KUBERNETES_CLUSTER_DOMAIN
-          value: {{ quote .Values.kubernetesClusterDomain }}
-        image: {{ .Values.helloKubernetes.image.repository }}:{{ .Values.helloKubernetes.image.tag
-          | default .Chart.AppVersion }}
-        name: hello-kubernetes
+      - name: {{ .Release.Name }}
+        image: {{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}
         ports:
-        - containerPort: 8080
-        resources: {}
+        - containerPort: 80
