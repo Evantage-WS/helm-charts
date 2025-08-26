@@ -5,6 +5,7 @@ image:
   tag: latest
 replicas: 1
 ingress:
+  ingressClassName: nginx
   host: "hello-kubernetes.local"
 service:
   type: ClusterIP
