@@ -3,6 +3,16 @@ entries:
   alien-geeko:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2026-03-21T16:46:13.659259215Z"
+    description: A Helm chart for the SUSE Edge Alien Geeko demo by Andrés Valero
+    digest: 1e8fc495d3aee2f7757dd46dcdc6485a693662255cc8e31ca198dabd68e8ee9f
+    name: alien-geeko
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/alien-geeko-0.1.2/alien-geeko-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2026-03-21T16:35:10.521977458Z"
     description: A Helm chart for the SUSE Edge Alien Geeko demo by Andrés Valero
     digest: f266dbae2c76265cd0e9d7d3e2911973fafff3d1aa2fb8b21ac9f80ac9a7ee9b
@@ -251,4 +261,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/space-station-control-center-1.0.0/space-station-control-center-1.0.0.tgz
     version: 1.0.0
-generated: "2026-03-21T16:35:10.522007855Z"
+generated: "2026-03-21T16:46:13.659296484Z"
