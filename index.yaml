@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  alien-geeko:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-03-21T16:30:18.851621143Z"
+    description: A Helm chart for Kubernetes
+    digest: ba75332a2e8abf0a10358f1c4b07ece0957104857b9740790219be9393ce5a16
+    name: alien-geeko
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/alien-geeko-0.1.0/alien-geeko-0.1.0.tgz
+    version: 0.1.0
   deep-space-network:
   - annotations:
       catalog.cattle.io/display-name: Evantage Deep Space Network
@@ -230,4 +241,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/space-station-control-center-1.0.0/space-station-control-center-1.0.0.tgz
     version: 1.0.0
-generated: "2025-08-26T17:16:08.101885145Z"
+generated: "2026-03-21T16:30:18.851646871Z"
