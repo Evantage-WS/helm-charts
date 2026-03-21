@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "alien-geeko.fullname" . }}-alien-geeko
+  labels:
+  {{- include "alien-geeko.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.alienGeeko.type }}
+  selector:
+    app: alien-geeko
+    {{- include "alien-geeko.selectorLabels" . | nindent 4 }}
+  ports:
+  {{- .Values.alienGeeko.ports | toYaml | nindent 2 }}

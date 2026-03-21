@@ -49,6 +49,9 @@ alienGeeko:
     topologyKey: kubernetes.io/arch
     whenUnsatisfiable: ScheduleAnyway
   type: ClusterIP
+ingress:
+  ingressClassName: nginx
+  host: "alien0geeko.sslip.io"
 clusterInfo:
   k8SVersion: detecting...
   nodeArch: amd64
