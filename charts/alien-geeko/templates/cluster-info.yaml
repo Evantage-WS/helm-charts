@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "alien-geeko.fullname" . }}-cluster-info
+  labels:
+  {{- include "alien-geeko.labels" . | nindent 4 }}
+data:
+  K8S_VERSION: {{ .Values.clusterInfo.k8SVersion | quote }}
+  NODE_ARCH: {{ .Values.clusterInfo.nodeArch | quote }}
+  NODE_COUNT: {{ .Values.clusterInfo.nodeCount | quote }}
+  OS_RELEASE: {{ .Values.clusterInfo.osRelease | quote }}

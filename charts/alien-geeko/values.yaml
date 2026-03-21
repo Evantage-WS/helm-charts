@@ -1,0 +1,64 @@
+alienGeeko:
+  alienGeeko:
+    containerSecurityContext:
+      allowPrivilegeEscalation: false
+      capabilities:
+        drop:
+        - ALL
+      readOnlyRootFilesystem: false
+      runAsGroup: 1000
+      runAsNonRoot: true
+      runAsUser: 1000
+      seccompProfile:
+        type: RuntimeDefault
+    env:
+      port: "3000"
+    image:
+      repository: docker.io/avaleror/alien-geeko
+      tag: latest
+    imagePullPolicy: IfNotPresent
+    resources:
+      limits:
+        cpu: 100m
+        memory: 64Mi
+      requests:
+        cpu: 25m
+        memory: 32Mi
+  nodeSelector: {}
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 3000
+  replicas: 1
+  tolerations:
+  - effect: NoSchedule
+    key: node-role.kubernetes.io/control-plane
+    operator: Exists
+  - effect: NoSchedule
+    key: node-role.kubernetes.io/master
+    operator: Exists
+  - effect: NoExecute
+    key: node-role.kubernetes.io/etcd
+    operator: Exists
+  topologySpreadConstraints:
+  - labelSelector:
+      matchLabels:
+        app: alien-geeko
+    maxSkew: 1
+    topologyKey: kubernetes.io/arch
+    whenUnsatisfiable: ScheduleAnyway
+  type: ClusterIP
+clusterInfo:
+  k8SVersion: detecting...
+  nodeArch: amd64
+  nodeCount: '?'
+  osRelease: SUSE Linux Micro
+config:
+  clusterName: EDGE-CLUSTER
+kubernetesClusterDomain: cluster.local
+serviceAccount:
+  annotations: {}
+  automount: true
+  create: true
+  name: ""
