@@ -1,4 +1,4 @@
-namespace: alien-geeko
+namespace: evantage
 alienGeeko:
   alienGeeko:
     containerSecurityContext:
