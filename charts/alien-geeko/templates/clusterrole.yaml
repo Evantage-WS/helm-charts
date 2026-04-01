@@ -16,3 +16,4 @@ rules:
   - /version
   verbs:
   - get
+

@@ -1,3 +1,4 @@
+namespace: alien-geeko
 alienGeeko:
   alienGeeko:
     containerSecurityContext:
@@ -58,7 +59,7 @@ clusterInfo:
   nodeCount: '?'
   osRelease: SUSE Linux Micro
 config:
-  clusterName: EDGE-CLUSTER
+  clusterName: demo
 kubernetesClusterDomain: cluster.local
 serviceAccount:
   annotations: {}
