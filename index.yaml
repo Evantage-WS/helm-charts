@@ -67,6 +67,22 @@ entries:
       catalog.cattle.io/release-name: evantage-deep-space-network
     apiVersion: v2
     appVersion: 1.0.1
+    created: "2026-04-15T10:55:38.052741476Z"
+    description: A Helm chart for the Deep Space Network application
+    digest: bacd396d5ed09f5023b0792597a3eb0049759d62e55190ca48df490650cca75a
+    maintainers:
+    - email: helm@evantage.nl
+      name: evantage
+    name: deep-space-network
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/deep-space-network-1.0.4/deep-space-network-1.0.4.tgz
+    version: 1.0.4
+  - annotations:
+      catalog.cattle.io/display-name: Evantage Deep Space Network
+      catalog.cattle.io/release-name: evantage-deep-space-network
+    apiVersion: v2
+    appVersion: 1.0.1
     created: "2026-04-15T10:48:38.835272085Z"
     description: A Helm chart for the Deep Space Network application
     digest: 2cdfa2cc8716a349852212b22f78c6b0a74dc0a7314a4d3869aec5fde34649cf
@@ -323,4 +339,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/space-station-control-center-1.0.0/space-station-control-center-1.0.0.tgz
     version: 1.0.0
-generated: "2026-04-15T10:48:38.835304163Z"
+generated: "2026-04-15T10:55:38.052790067Z"
