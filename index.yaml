@@ -61,6 +61,17 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/alien-geeko-0.1.0/alien-geeko-0.1.0.tgz
     version: 0.1.0
+  cluster-arcade-ai:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-10-28T15:12:36.571822246Z"
+    description: A Helm chart for Geeko's Cluster Arcade by JJ-AI
+    digest: dbc9b9d7eb0aa3c2ea1e6f2a9c07c6b8ee2d3bd3fea7ca98c98e6b388712be00
+    name: cluster-arcade-ai
+    type: application
+    urls:
+    - https://github.com/Evantage-WS/helm-charts/releases/download/cluster-arcade-ai-0.1.0/cluster-arcade-ai-0.1.0.tgz
+    version: 0.1.0
   deep-space-network:
   - annotations:
       catalog.cattle.io/display-name: Evantage Deep Space Network
@@ -339,4 +350,4 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/space-station-control-center-1.0.0/space-station-control-center-1.0.0.tgz
     version: 1.0.0
-generated: "2026-04-15T10:55:38.052790067Z"
+generated: "2026-10-28T15:12:36.571859461Z"
