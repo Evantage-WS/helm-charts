@@ -1,0 +1,17 @@
+# Ollama endpoint. The default is the one SUSE AI's "simple chatbot with RAG" installs.
+ollama:
+  url: http://ollama.suse-ai.svc.cluster.local:11434
+  model: llama3:8b
+
+# Simultaneous model calls allowed (the app is public, and CPU inference is slow).
+maxConcurrent: 2
+
+image: registry.suse.com/bci/python:3.13
+
+ingress:
+  enabled: true
+  # Empty host matches any hostname, so the app answers on the cluster's ingress IP.
+  # Fleet sets this from the cluster label "jj-ai/host" (see fleet.yaml).
+  host:
+  # Empty uses the cluster's default IngressClass.
+  className: traefik
