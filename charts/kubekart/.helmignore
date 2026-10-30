@@ -1,5 +1,0 @@
-fleet.yaml
-.git/
-__pycache__/
-*.pyc
-README.md
