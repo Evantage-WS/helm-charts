@@ -317,18 +317,6 @@ entries:
     urls:
     - https://github.com/Evantage-WS/helm-charts/releases/download/hello-rancher-1.0.0/hello-rancher-1.0.0.tgz
     version: 1.0.0
-  kubekart:
-  - apiVersion: v2
-    appVersion: "1.0"
-    created: "2026-10-30T09:31:32.896186424Z"
-    description: KubeKart, a microservice online shop with a demo payment tier and
-      a SUSE AI shopping assistant.
-    digest: 63efd954f6e75b59cb98f303882d0a6c307de0ae39a7b9fab4fdca2d59ec9fcb
-    name: kubekart
-    type: application
-    urls:
-    - https://github.com/Evantage-WS/helm-charts/releases/download/kubekart-0.1.0/kubekart-0.1.0.tgz
-    version: 0.1.0
   space-station-control-center:
   - annotations:
       catalog.cattle.io/display-name: Evantage Space Station Control Center
